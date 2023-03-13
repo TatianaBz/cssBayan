@@ -210,7 +210,10 @@ img {
   body {
     width: 820px;
   }
-
+ .section-image img:hover {
+    transform: none;
+    opacity: none;
+  }
   .header-title {
     font-size: 3em;
   }
