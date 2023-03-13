@@ -72,6 +72,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin: 2em auto;
+ cursor: pointer;
 }
 
 .section-title {
@@ -127,6 +128,7 @@ img {
   height: 0;
   overflow: hidden;
   transition: all 1s linear;
+   cursor: pointer;
 }
 
 .section-icon {
