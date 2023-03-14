@@ -7,10 +7,10 @@ body {
 }
 
 .hidden-visually {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  position: static;
+  width: 0.001em;
+  height: 0.001em;
+  margin: -0.01em;
   border: 0;
   padding: 0;
   white-space: nowrap;
@@ -72,9 +72,12 @@ img {
   justify-content: space-between;
   align-items: center;
   margin: 2em auto;
- cursor: pointer;
 }
-
+@media(hover:hover){
+  .section-label {
+    cursor:pointer;
+  }
+}
 .section-title {
   font-family: 'Roboto';
   font-size: 3em;
@@ -128,7 +131,13 @@ img {
   height: 0;
   overflow: hidden;
   transition: all 1s linear;
-   cursor: pointer;
+   }
+
+@media(hover:hover){
+  .section-content,
+.section-icon{
+    cursor:pointer;
+  }
 }
 
 .section-icon {
@@ -153,13 +162,13 @@ img {
 }
 
 /*наведение на баян*/
+
+@media(hover:hover){
 .main-wrapper:hover {
   cursor: pointer;
 }
-
-.main-wrapper:hover .section-title {
-  color: #636363;
 }
+
 
 .main-wrapper:hover .section-icon {
   overflow: visible;
